@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/tetris-game/static/css/main.ce22e7e3.chunk.css",
-    "main.js": "/tetris-game/static/js/main.ac920e09.chunk.js",
-    "main.js.map": "/tetris-game/static/js/main.ac920e09.chunk.js.map",
-    "runtime-main.js": "/tetris-game/static/js/runtime-main.b6cd34fa.js",
-    "runtime-main.js.map": "/tetris-game/static/js/runtime-main.b6cd34fa.js.map",
-    "static/js/2.7529b9c0.chunk.js": "/tetris-game/static/js/2.7529b9c0.chunk.js",
-    "static/js/2.7529b9c0.chunk.js.map": "/tetris-game/static/js/2.7529b9c0.chunk.js.map",
-    "index.html": "/tetris-game/index.html",
-    "precache-manifest.46af9808a87c2f1e50532855d50c62e3.js": "/tetris-game/precache-manifest.46af9808a87c2f1e50532855d50c62e3.js",
-    "service-worker.js": "/tetris-game/service-worker.js",
-    "static/css/main.ce22e7e3.chunk.css.map": "/tetris-game/static/css/main.ce22e7e3.chunk.css.map",
-    "static/js/2.7529b9c0.chunk.js.LICENSE.txt": "/tetris-game/static/js/2.7529b9c0.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/tetris-game/static/media/Pixel LCD-7.0a33d170.ttf",
-    "static/media/bg.gif": "/tetris-game/static/media/bg.11c1f63b.gif"
+    "main.css": "/Tetris-Game/static/css/main.97a95128.chunk.css",
+    "main.js": "/Tetris-Game/static/js/main.d88bd109.chunk.js",
+    "main.js.map": "/Tetris-Game/static/js/main.d88bd109.chunk.js.map",
+    "runtime-main.js": "/Tetris-Game/static/js/runtime-main.5bd9fc26.js",
+    "runtime-main.js.map": "/Tetris-Game/static/js/runtime-main.5bd9fc26.js.map",
+    "static/js/2.02c67057.chunk.js": "/Tetris-Game/static/js/2.02c67057.chunk.js",
+    "static/js/2.02c67057.chunk.js.map": "/Tetris-Game/static/js/2.02c67057.chunk.js.map",
+    "index.html": "/Tetris-Game/index.html",
+    "precache-manifest.f0bfee1816137809717986fe3dfddef5.js": "/Tetris-Game/precache-manifest.f0bfee1816137809717986fe3dfddef5.js",
+    "service-worker.js": "/Tetris-Game/service-worker.js",
+    "static/css/main.97a95128.chunk.css.map": "/Tetris-Game/static/css/main.97a95128.chunk.css.map",
+    "static/js/2.02c67057.chunk.js.LICENSE.txt": "/Tetris-Game/static/js/2.02c67057.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Tetris-Game/static/media/Pixel LCD-7.0a33d170.ttf",
+    "static/media/bg.gif": "/Tetris-Game/static/media/bg.11c1f63b.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.b6cd34fa.js",
-    "static/js/2.7529b9c0.chunk.js",
-    "static/css/main.ce22e7e3.chunk.css",
-    "static/js/main.ac920e09.chunk.js"
+    "static/js/runtime-main.5bd9fc26.js",
+    "static/js/2.02c67057.chunk.js",
+    "static/css/main.97a95128.chunk.css",
+    "static/js/main.d88bd109.chunk.js"
   ]
 }
