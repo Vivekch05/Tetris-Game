@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f156a74ff0b3ada8160d628c27637aa",
+    "revision": "926554987069ddb29f5a6d78b1963c12",
     "url": "/Tetris-Game/index.html"
   },
   {
-    "revision": "aca5c518c21a745fee4a",
+    "revision": "f9f3a8e0a7a860e2ab93",
     "url": "/Tetris-Game/static/css/main.97a95128.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Tetris-Game/static/js/2.02c67057.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aca5c518c21a745fee4a",
-    "url": "/Tetris-Game/static/js/main.d88bd109.chunk.js"
+    "revision": "f9f3a8e0a7a860e2ab93",
+    "url": "/Tetris-Game/static/js/main.d1389941.chunk.js"
   },
   {
     "revision": "2213884b9a790a13550b",
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Tetris-Game/static/media/Pixel LCD-7.0a33d170.ttf"
   },
   {
-    "revision": "11c1f63bb6d80e8c21908ec216078473",
-    "url": "/Tetris-Game/static/media/bg.11c1f63b.gif"
+    "revision": "0d1eddbede1d6991e3ae35985ed9ce2f",
+    "url": "/Tetris-Game/static/media/bg.0d1eddbe.gif"
   }
 ]);
