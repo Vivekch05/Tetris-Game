@@ -62,7 +62,7 @@ const Tetris = () => {
       setDropTime(1000 / (level + 1) + 200);
     }
 
-    if (!checkCollision(player, stage, { x: 0, y: 2 })) {
+    if (!checkCollision(player, stage, { x: 0, y: 1 })) {
       updatePlayerPos({ x: 0, y: 1, collided: false });
     } else {
       // Game over!
