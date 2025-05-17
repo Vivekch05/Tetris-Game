@@ -1,12 +1,33 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import {
+  StyledHeader,
+  HeaderContent,
+  Logo,
+  GameInfo,
+  InfoItem
+} from './styles/StyledHeader';
 
-
-const Header = ()=> {
+const Header = () => {
   return (
-<div className="header">
-  <h1>Hey Play <span style={{color:"red"}}>'Tetris'</span> Game Sometimes <span style={{color:"red"}}>:)</span></h1>
-</div>
+    <StyledHeader>
+      <HeaderContent>
+        <Logo>
+          TETRIS<span> GAME</span>
+        </Logo>
+        <GameInfo>
+          <InfoItem>
+            Level: <span>1</span>
+          </InfoItem>
+          <InfoItem>
+            Score: <span>0</span>
+          </InfoItem>
+          <InfoItem>
+            Lines: <span>0</span>
+          </InfoItem>
+        </GameInfo>
+      </HeaderContent>
+    </StyledHeader>
   );
-}
+};
+
 export default Header;
