@@ -5,7 +5,7 @@ import React from 'react';
 const Header = ()=> {
   return (
 <div className="header">
-  <h1>Hey Enjoy <span style={{color:"red"}}>Tetris</span> Game Sometimes <span style={{color:"red"}}>:)</span></h1>
+  <h1>Hey Play <span style={{color:"red"}}>'Tetris'</span> Game Sometimes <span style={{color:"red"}}>:)</span></h1>
 </div>
   );
 }
