@@ -4,7 +4,7 @@ import Tetris from './components/Tetris';
 
 const App=()=>{
   return (
-    <div className="App">
+    <div className="App" data-testid="tetris-game"> 
       <Tetris/>
     </div>
   );

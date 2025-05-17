@@ -1,14 +1,41 @@
 import React from 'react';
-//import {Link} from 'react-router-dom';
-//import bgImage1 from '../img/bg1.gif';
+import {
+  StyledFooter,
+  FooterContent,
+  FooterText,
+  FooterLinks,
+  FooterLink,
+  TechStack
+} from './styles/StyledFooter';
 
-const Footer=()=> {
+const Footer = () => {
   return (
-    <div className="footer">
-      <p>Developed By:&nbsp;<span style={{color:"blue",fontWeight:"bold"}}>Vivek Chaurasia,</span>&nbsp;Using, &nbsp; React JS ,&nbsp; Hooks,
-            &nbsp;Styled Components and some Gaming Concepts.</p>
-    </div>
+    <StyledFooter>
+      <FooterContent>
+        <FooterText>
+          Developed by <span>Vivek Chaurasia</span>
+        </FooterText>
+        
+        <TechStack>
+          <i className="fab fa-react" title="React"></i>
+          <i className="fab fa-js" title="JavaScript"></i>
+          <i className="fab fa-css3-alt" title="CSS3"></i>
+          <span>React Hooks & Styled Components</span>
+        </TechStack>
+
+        <FooterLinks>
+          <FooterLink href="https://github.com/Vivekch05" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
+            GitHub
+          </FooterLink>
+          <FooterLink href="https://www.linkedin.com/in/vivekch123/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i>
+            LinkedIn
+          </FooterLink>
+        </FooterLinks>
+      </FooterContent>
+    </StyledFooter>
   );
-}
+};
 
 export default Footer;

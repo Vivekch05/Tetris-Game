@@ -1,10 +1,18 @@
 import React from 'react';
-import { StyledCell} from './styles/StyledCell';
-import {TETROMINOS} from '../tetrominos';
+import { StyledCell } from './styles/StyledCell';
+import { TETROMINOS } from '../tetrominos';
 
-const Cell=({type})=>{
-    return(
-    <StyledCell type={type} color={TETROMINOS[type].color}>{console.log("re render")}</StyledCell>
-    )
-}
-export default React.memo(Cell);
+const Cell = ({ type, index }) => {
+  return (
+    <StyledCell 
+      type={type} 
+      color={TETROMINOS[type].color}
+      data-testid="cell"
+      key={`cell-${index}`}
+    />
+  );
+};
+
+export default React.memo(Cell, (prevProps, nextProps) => {
+  return prevProps.type === nextProps.type;
+});
