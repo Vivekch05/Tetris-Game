@@ -2,16 +2,23 @@ import styled from 'styled-components';
 
 export const StyledTetrisWrapper = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 0 50px 0;
+  padding: 80px 0 20px 0;
   box-sizing: border-box;
   position: relative;
+  transition: padding 0.3s ease;
+  outline: none;
+  
+  &:focus {
+    outline: none;
+  }
 
   &::before {
     content: '';
@@ -25,6 +32,18 @@ export const StyledTetrisWrapper = styled.div`
       radial-gradient(circle at 80% 80%, rgba(255, 142, 142, 0.1) 0%, transparent 50%);
     pointer-events: none;
   }
+
+  @media (max-width: 850px) {
+    padding: 70px 0 15px 0;
+  }
+
+  @media (max-width: 600px) {
+    padding: 60px 0 10px 0;
+  }
+
+  @media (max-height: 700px) {
+    padding: 60px 0 15px 0;
+  }
 `;
 
 export const StyledTetris = styled.div`
@@ -34,7 +53,8 @@ export const StyledTetris = styled.div`
   margin: 0 auto;
   width: 90%;
   max-width: 900px;
-  height: calc(100vh - 140px);
+  min-height: calc(100vh - 100px);
+  max-height: calc(100vh - 100px);
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   box-shadow: 
@@ -62,51 +82,75 @@ export const StyledTetris = styled.div`
     pointer-events: none;
   }
 
-  aside {
+  .game-area {
+    display: flex;
     width: 100%;
-    max-width: 200px;
+    height: 100%;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .left-panel, .right-panel {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 0 20px;
-    height: 100%;
     gap: 15px;
+    min-width: 120px;
+  }
 
-    > div {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+  .center-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   @media (max-width: 850px) {
     width: 95%;
     padding: 15px;
-    height: calc(100vh - 160px);
+    min-height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
     
-    aside {
-      max-width: 150px;
-      padding: 0 15px;
+    .game-area {
+      gap: 15px;
+    }
+    
+    .left-panel, .right-panel {
+      min-width: 100px;
       gap: 12px;
     }
   }
 
   @media (max-width: 600px) {
     padding: 12px;
-    height: calc(100vh - 150px);
+    min-height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
     
-    aside {
-      max-width: 120px;
-      padding: 0 10px;
+    .game-area {
+      gap: 12px;
+    }
+    
+    .left-panel, .right-panel {
+      min-width: 80px;
       gap: 10px;
     }
   }
 
   @media (max-height: 700px) {
-    height: calc(100vh - 120px);
+    min-height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
     padding: 10px;
     
-    aside {
+    .game-area {
+      gap: 10px;
+    }
+    
+    .left-panel, .right-panel {
       gap: 8px;
     }
   }
