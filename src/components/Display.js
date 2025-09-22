@@ -39,7 +39,7 @@ const Display = ({ gameOver, text, animated = true, icon = null }) => {
         } else {
             setDisplayValue(value || text);
         }
-    }, [value, animated, displayValue]);
+    }, [value, animated, displayValue, text]);
 
     // Get icon based on label type
     const getIcon = () => {
