@@ -83,11 +83,11 @@ export const usePlayerEnhanced = () => {
       setNextPiece(randomTetromino());
     }
     setCanHold(false);
-  }, [canHold, holdPiece, player.tetromino, nextPiece]);
+  }, [canHold, holdPiece, player.tetromino, nextPiece, getCurrentPieceColor]);
 
   const getCurrentPieceColor = () => {
     // Find the color of the current piece
-    for (const [key, tetromino] of Object.entries(TETROMINOS)) {
+    for (const [, tetromino] of Object.entries(TETROMINOS)) {
       if (JSON.stringify(tetromino.shape) === JSON.stringify(player.tetromino)) {
         return tetromino.color;
       }
